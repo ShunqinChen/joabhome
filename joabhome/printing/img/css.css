@@ -1,0 +1,59 @@
+.12 {
+	font-family: "Verdana";
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.input {
+	font-family: "Verdana";
+	font-size: 12px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #7F9DB9;
+	border-right-color: #7F9DB9;
+	border-bottom-color: #7F9DB9;
+	border-left-color: #7F9DB9;
+	color: 333333;
+
+}
+.14 {
+	font-family: "Verdana";
+	font-size: 16px;
+	font-weight: bolder;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.13 {
+	font-family: "Verdana";
+	font-size: 12px;
+	font-style: normal;
+	line-height: 18px;
+	color: #000000;
+	text-decoration: none;
+	font-weight: normal;
+}
+.133 {
+	font-family: "»ªÎÄÐÐ¿¬";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFCC00;
+	text-decoration: underline;
+}
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #7F1A02; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff6600; TEXT-DECORATION: none
+}

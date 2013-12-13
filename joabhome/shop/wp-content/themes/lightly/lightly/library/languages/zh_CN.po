@@ -1,0 +1,480 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Text in function
+#: lightly/library/metaboxes.php:43
+#, fuzzy
+msgid " Featured video"
+msgstr "视频输出"
+
+#. Text in function
+#: lightly/library/plus62-helper.php:339
+msgid " of "
+msgstr ""
+
+#. Text in function
+#: lightly/comments.php:23
+msgid "% Responses"
+msgstr "%响应"
+
+#. Text in function
+#: lightly/functions.php:119
+msgid "%1$s"
+msgstr ""
+
+#. Text in function
+#: lightly/index.php:82
+#: lightly/search.php:59
+#: lightly/archive-page.php:69
+#: lightly/archive.php:81
+#, fuzzy
+msgid "&laquo; Older Entries"
+msgstr "没找到条目"
+
+#. Text in function
+#: lightly/single.php:38
+msgid "&larr; Previous Post"
+msgstr "&larr;上一篇文章"
+
+#. Text in echo
+#: lightly/comments.php:103
+msgid "(*) Required, Your email will not be published"
+msgstr "(*) 为必填您的电子邮件不会被公开"
+
+#. Text in function
+#: lightly/functions.php:120
+msgid "(Edit)"
+msgstr "编辑"
+
+#. Text in echo
+#: lightly/404.php:13
+msgid "404 Not Found"
+msgstr "404未找到"
+
+#. Text in function
+#: lightly/functions.php:118
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr "<cite class=\"fn\">%s</cite>"
+
+#. Text in echo
+#: lightly/archive-page.php:29
+msgid "Archives"
+msgstr "档案"
+
+#. Text in echo
+#: lightly/search.php:106
+#: lightly/404.php:53
+msgid "Archives by Month:"
+msgstr "档案馆月:"
+
+#. Text in echo
+#: lightly/search.php:110
+#: lightly/404.php:57
+msgid "Archives by Subject:"
+msgstr "档案主题:"
+
+#. Text in echo
+#: lightly/attachment.php:38
+#: lightly/single.php:41
+msgid "Author"
+msgstr "作者"
+
+#. Text in function
+#: lightly/library/widgets/tabs.php:1
+msgid "Browse Archives"
+msgstr "浏览档案"
+
+#. Text in function
+#: lightly/library/widgets/tabs.php:1
+msgid "Browse Categories"
+msgstr "浏览分类"
+
+#. Text in function
+#: lightly/library/widgets/tabs.php:1
+msgid "Browse Pages"
+msgstr "浏览页"
+
+#. Text in echo
+#: lightly/library/plus62-helper.php:338
+msgid "Cannot Retrieved a Related Posts Yet!"
+msgstr "无法检索了相关文章！"
+
+#. Text in function
+#: lightly/single.php:20
+msgid "Comment closed"
+msgstr "清除评论"
+
+#. Text in echo
+#: lightly/archive.php:25
+msgid "Daily Archives For"
+msgstr "每日存档"
+
+#. Text in echo
+#: lightly/404.php:20
+msgid "Error 404, This means that post you are looking for is not available."
+msgstr "错误404，这意味着你正在寻找，后是无法使用的。"
+
+#. Text in echo
+#: lightly/search.php:93
+#: lightly/404.php:40
+msgid "Last 30 Posts"
+msgstr "最近30个帖子"
+
+#. Text in function
+#: lightly/library/widgets/recent_comments.php:1
+#: lightly/library/widgets/recent_comments.php:47
+msgid "Latest Comments"
+msgstr "最新评论"
+
+#. Text in function
+#: lightly/library/widgets/flickr.php:28
+msgid "Latest Pictures"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/twitter.php:1
+#: lightly/library/widgets/twitter.php:27
+msgid "Latest Tweet"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/video.php:1
+#: lightly/library/widgets/video.php:56
+msgid "Latest Videos"
+msgstr "最新视频"
+
+#. Text in function
+#: lightly/comments.php:60
+msgid "Leave a Reply"
+msgstr "发表评论"
+
+#. Text in function
+#: lightly/comments.php:60
+msgid "Leave a Reply to %s"
+msgstr "发表回复 %s"
+
+#. Text in echo
+#: lightly/comments.php:69
+msgid "Log in now"
+msgstr "现在登入"
+
+#. Text in echo
+#: lightly/comments.php:89
+msgid "Mail"
+msgstr "邮件"
+
+#. Text in echo
+#: lightly/search.php:86
+#: lightly/404.php:33
+msgid "Make sure all words are spelled correctly."
+msgstr "确保所有单词拼写正确。"
+
+#. Text in echo
+#: lightly/archive.php:29
+msgid "Monthly Archives For"
+msgstr "每月存档文件"
+
+#. Text in echo
+#: lightly/library/widgets/flickr.php:27
+msgid "More Photos"
+msgstr "更多照片"
+
+#. Text in echo
+#: lightly/library/metaboxes.php:41
+msgid "NOTE: Featured video only works when the selected post format is video format."
+msgstr "注：精选视频时，只适用于选定的职位格式的视频格式。"
+
+#. Text in function
+#: lightly/index.php:83
+#: lightly/search.php:60
+#: lightly/archive-page.php:70
+#: lightly/archive.php:82
+#, fuzzy
+msgid "Newer Entries &raquo;"
+msgstr "没找到条目"
+
+#. Text in function
+#: lightly/attachment.php:15
+msgid "Next Post"
+msgstr "下一篇"
+
+#. Text in function
+#: lightly/single.php:37
+msgid "Next Post &rarr;"
+msgstr "下一篇&rarr;"
+
+#. Text in function
+#: lightly/index.php:54
+#: lightly/search.php:33
+#: lightly/archive.php:55
+#: lightly/library/widgets/recent_posts.php:58
+msgid "No Comment"
+msgstr "没有评论"
+
+#. Text in echo
+#: lightly/archive-page.php:80
+#: lightly/archive.php:92
+#, fuzzy
+msgid "No Posts Yet"
+msgstr "还没有找到匹配页"
+
+#. Text in function
+#: lightly/comments.php:23
+#, fuzzy
+msgid "No Responses"
+msgstr "没有声音"
+
+#. Text in function
+#: lightly/index.php:65
+#: lightly/attachment.php:36
+msgid "OFF"
+msgstr "关闭"
+
+#. Text in function
+#: lightly/comments.php:23
+msgid "One Response"
+msgstr "一个响应"
+
+#. Text in function
+#: lightly/library/plus62-helper.php:339
+msgid "Page"
+msgstr "页面"
+
+#. Text in function
+#: lightly/library/plus62-helper.php:339
+msgid "Page 1 of 1"
+msgstr "Page 1 of 1"
+
+#. Text in echo
+#: lightly/sidebar-secondary.php:13
+#: lightly/sidebar.php:13
+msgid "Please activate some Widgets."
+msgstr "请启用一些小部件。"
+
+#. Text in function
+#: lightly/library/widgets/flickr.php:1
+msgid "Plus62 - Flickr"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/video.php:1
+#, fuzzy
+msgid "Plus62 - Latest video"
+msgstr "改变视频模式失败."
+
+#. Text in function
+#: lightly/library/widgets/recent_comments.php:1
+#, fuzzy
+msgid "Plus62 - Recent Comments"
+msgstr "在注释中寻找"
+
+#. Text in function
+#: lightly/library/widgets/recent_posts.php:1
+msgid "Plus62 - Recent Posts"
+msgstr "Plus62 - 最近的帖子"
+
+#. Text in function
+#: lightly/library/widgets/social.php:1
+msgid "Plus62 - Social Media Links"
+msgstr "Plus62 -社会化媒体链接"
+
+#. Text in function
+#: lightly/library/widgets/tabs.php:1
+msgid "Plus62 - Tabs"
+msgstr "Plus62 - 标签"
+
+#. Text in function
+#: lightly/library/widgets/twitter.php:1
+msgid "Plus62 - Twitter"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/tabs.php:1
+msgid "Popular Posts"
+msgstr "热门文章"
+
+#. Text in function
+#: lightly/header.php:81
+#, fuzzy
+msgid "Popular Topics:"
+msgstr "帮助主题"
+
+#. Text in echo
+#: lightly/single.php:32
+msgid "Posted in "
+msgstr "发表于"
+
+#. Text in echo
+#: lightly/archive.php:21
+msgid "Posts By"
+msgstr "帖子"
+
+#. Text in function
+#: lightly/attachment.php:16
+#, fuzzy
+msgid "Previous Post"
+msgstr "前页"
+
+#. Text in echo
+#: lightly/library/metaboxes.php:29
+msgid "Provider"
+msgstr "提供者"
+
+#. Text in echo
+#: lightly/index.php:61
+#: lightly/search.php:40
+#: lightly/archive-page.php:49
+#: lightly/archive.php:62
+msgid "Read Post &rarr;"
+msgstr "阅读帖子 &rarr;"
+
+#. Text in function
+#: lightly/library/widgets/tabs.php:1
+#: lightly/library/widgets/recent_posts.php:1
+#: lightly/library/widgets/recent_posts.php:82
+msgid "Recent Posts"
+msgstr "最近的帖子"
+
+#. Text in function
+#: lightly/library/widgets/tabs.php:1
+msgid "Recent Response"
+msgstr "最近响应"
+
+#. Text in echo
+#: lightly/attachment.php:47
+#: lightly/single.php:50
+msgid "Related Posts"
+msgstr "相关文章"
+
+#. Text in function
+#: lightly/functions.php:133
+#, fuzzy
+msgid "Search"
+msgstr "搜索"
+
+#. Text in echo
+#: lightly/search.php:12
+#, fuzzy
+msgid "Search Result"
+msgstr "搜索路径"
+
+#. Text in function
+#: lightly/functions.php:133
+#, fuzzy
+msgid "Search for:"
+msgstr "搜索:"
+
+#. Text in echo
+#: lightly/search.php:73
+msgid "Search return zero result."
+msgstr "搜索返回结果为零。"
+
+#. Text in echo
+#: lightly/archive-page.php:83
+#: lightly/archive.php:95
+msgid "Sorry, What you were looking for is not here."
+msgstr "对不起，你要找的是不是在这里。"
+
+#. Text in echo
+#: lightly/search.php:83
+#: lightly/404.php:30
+msgid "Suggestions :"
+msgstr "建议:"
+
+#. Text in echo
+#: lightly/archive.php:17
+msgid "Tagged By"
+msgstr "加上的标签"
+
+#. Text in function
+#: lightly/library/widgets/tabs.php:1
+msgid "Tags"
+msgstr "标签"
+
+#. Text in echo
+#: lightly/comments.php:12
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "这是一篇受密码保护。输入密码以查看评论。"
+
+#. Text in echo
+#: lightly/search.php:88
+#: lightly/404.php:35
+#, fuzzy
+msgid "Try different keywords."
+msgstr "在关键字列表中的一个项目:"
+
+#. Text in echo
+#: lightly/search.php:90
+#: lightly/404.php:37
+msgid "Try more general keywords."
+msgstr "尝试使用更宽泛的关键字。"
+
+#. Text in echo
+#: lightly/search.php:79
+#: lightly/404.php:26
+#, fuzzy
+msgid "Try search something"
+msgstr "搜索所有的书籍"
+
+#. Text in function
+#: lightly/functions.php:133
+msgid "Type your search here"
+msgstr "在这里输入您的搜索"
+
+#. Text in echo
+#: lightly/library/metaboxes.php:37
+msgid "Video ID/URL"
+msgstr "视频ID/ URL"
+
+#. Text in echo
+#: lightly/archive.php:33
+#, fuzzy
+msgid "Yearly Archives For"
+msgstr "打开 '%s'(为 %s) 失败"
+
+#. Text in echo
+#: lightly/comments.php:69
+msgid "You must be login to post a comment."
+msgstr "你必须登录后才能发表评论。"
+
+#. Text in echo
+#: lightly/comments.php:90
+#, fuzzy
+msgid "Your Email"
+msgstr "您的电子邮件地址:"
+
+#. Text in echo
+#: lightly/comments.php:85
+#, fuzzy
+msgid "Your Name"
+msgstr "您的姓名:"
+
+#. Text in echo
+#: lightly/comments.php:95
+#, fuzzy
+msgid "Your Website"
+msgstr "您的姓名:"
+
+#. Text in echo
+#: lightly/functions.php:124
+msgid "Your comment is awaiting moderation."
+msgstr "使用VIMEO或YouTube提供的视频ID，如果你选择和视频的URL，如果你选择自托管的视频"
+
+#. Text in echo
+#: lightly/footer.php:29
+msgid "is powered by"
+msgstr "是由"
+
+#. Text in echo
+#: lightly/library/metaboxes.php:39
+msgid "use the video id if you choose vimeo or youtube provider, and video URL if you choose self hosted video"
+msgstr "使用VIMEO或YouTube提供的视频ID，如果你选择和视频的URL，如果你选择自托管的视频"
+

@@ -1,0 +1,59 @@
+[13-Mar-2008 00:33:49] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: YES) in /home/joabhome/public_html/admin/comm/mysqldb.php on line 9
+[13-Mar-2008 00:35:28] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home/joabhome/public_html/admin/comm/mysqldb.php on line 39
+[13-Mar-2008 00:36:37] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home/joabhome/public_html/admin/comm/mysqldb.php on line 40
+[13-Mar-2008 00:38:40] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Lost connection to MySQL server at 'reading authorization packet', system error: 0 in /home/joabhome/public_html/admin/index.php on line 10
+[13-Mar-2008 00:40:41] PHP Warning:  mysql_fetch_row(): supplied argument is not a valid MySQL result resource in /home/joabhome/public_html/admin/comm/mysqldb.php on line 40
+[13-Mar-2008 00:46:17] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Lost connection to MySQL server at 'reading authorization packet', system error: 0 in /home/joabhome/public_html/admin/index.php on line 10
+[14-Mar-2008 02:23:36] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Lost connection to MySQL server at 'reading authorization packet', system error: 0 in /home/joabhome/public_html/admin/index.php on line 10
+[14-Mar-2008 05:08:26] PHP Fatal error:  Call to a member function GetAll() on a non-object in /home/joabhome/public_html/admin/module/proAdd.php on line 23
+[14-Mar-2008 05:08:35] PHP Fatal error:  Call to a member function GetAll() on a non-object in /home/joabhome/public_html/admin/module/proAdd.php on line 23
+[14-Mar-2008 05:09:09] PHP Fatal error:  Call to a member function GetAll() on a non-object in /home/joabhome/public_html/admin/module/proAdd.php on line 23
+[14-Mar-2008 05:14:04] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Lost connection to MySQL server at 'reading authorization packet', system error: 0 in /home/joabhome/public_html/admin/index.php on line 10
+[14-Mar-2008 05:31:12] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '218.85.134.21' (4) in /home/joabhome/public_html/admin/index.php on line 10
+[14-Mar-2008 06:27:48] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unsupport image type' in /home/joabhome/public_html/admin/comm/Image.class.php:375
+Stack trace:
+#0 /home/joabhome/public_html/admin/comm/Image.class.php(334): Image->createImageFromFile()
+#1 /home/joabhome/public_html/admin/comm/Image.class.php(471): Image->createSrcImage()
+#2 /home/joabhome/public_html/admin/module/proAdd.php(15): Image->waterMark('2342??34', 0, 5, '#0000FF')
+#3 /home/joabhome/public_html/admin/index.php(26): include('/home/joabhome/...')
+#4 {main}
+  thrown in /home/joabhome/public_html/admin/comm/Image.class.php on line 375
+[14-Mar-2008 06:41:52] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unsupport image type' in /home/joabhome/public_html/admin/comm/Image.class.php:375
+Stack trace:
+#0 /home/joabhome/public_html/admin/comm/Image.class.php(334): Image->createImageFromFile()
+#1 /home/joabhome/public_html/admin/comm/Image.class.php(471): Image->createSrcImage()
+#2 /home/joabhome/public_html/admin/module/proAdd.php(15): Image->waterMark('1111111', 0, 5, '#0000FF')
+#3 /home/joabhome/public_html/admin/index.php(21): include('/home/joabhome/...')
+#4 {main}
+  thrown in /home/joabhome/public_html/admin/comm/Image.class.php on line 375
+[14-Mar-2008 06:47:29] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unsupport image type' in /home/joabhome/public_html/admin/comm/Image.class.php:375
+Stack trace:
+#0 /home/joabhome/public_html/admin/comm/Image.class.php(334): Image->createImageFromFile()
+#1 /home/joabhome/public_html/admin/comm/Image.class.php(471): Image->createSrcImage()
+#2 /home/joabhome/public_html/admin/module/proAdd.php(15): Image->waterMark('1111111', 0, 5, '#0000FF')
+#3 /home/joabhome/public_html/admin/index.php(21): include('/home/joabhome/...')
+#4 {main}
+  thrown in /home/joabhome/public_html/admin/comm/Image.class.php on line 375
+[14-Mar-2008 06:49:18] PHP Warning:  imagecreatefromwbmp() [<a href='function.imagecreatefromwbmp'>function.imagecreatefromwbmp</a>]: './productimg/1.bmp' is not a valid WBMP file in /home/joabhome/public_html/admin/comm/Image.class.php on line 376
+[14-Mar-2008 06:49:18] PHP Warning:  imagealphablending(): supplied argument is not a valid Image resource in /home/joabhome/public_html/admin/comm/Image.class.php on line 525
+[14-Mar-2008 06:49:18] PHP Warning:  imagecolorallocate(): supplied argument is not a valid Image resource in /home/joabhome/public_html/admin/comm/Image.class.php on line 533
+[14-Mar-2008 06:49:18] PHP Warning:  imagestring(): supplied argument is not a valid Image resource in /home/joabhome/public_html/admin/comm/Image.class.php on line 534
+[14-Mar-2008 06:49:18] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unsupport image type' in /home/joabhome/public_html/admin/comm/Image.class.php:626
+Stack trace:
+#0 /home/joabhome/public_html/admin/comm/Image.class.php(667): Image->display('./productimg/1....')
+#1 /home/joabhome/public_html/admin/module/proAdd.php(16): Image->save()
+#2 /home/joabhome/public_html/admin/index.php(21): include('/home/joabhome/...')
+#3 {main}
+  thrown in /home/joabhome/public_html/admin/comm/Image.class.php on line 626
+[14-Mar-2008 06:58:13] PHP Fatal error:  Uncaught exception 'Exception' with message 'Unsupport image type' in /home/joabhome/public_html/admin/comm/Image.class.php:375
+Stack trace:
+#0 /home/joabhome/public_html/admin/comm/Image.class.php(334): Image->createImageFromFile()
+#1 /home/joabhome/public_html/admin/comm/Image.class.php(471): Image->createSrcImage()
+#2 /home/joabhome/public_html/admin/module/proAdd.php(15): Image->waterMark('234234', 0, 5, '#0000FF')
+#3 /home/joabhome/public_html/admin/index.php(21): include('/home/joabhome/...')
+#4 {main}
+  thrown in /home/joabhome/public_html/admin/comm/Image.class.php on line 375
+[24-Mar-2008 04:39:29] PHP Parse error:  syntax error, unexpected '}' in /home/joabhome/public_html/admin/module/pecifAdd.php on line 30
+[27-May-2008 21:45:46] PHP Fatal error:  Call to undefined function  gettitle() in /home/joabhome/public_html/admin/module/editpass.php on line 37
+[24-May-2010 22:55:04] PHP Parse error:  syntax error, unexpected T_STRING in /home/joabhome/public_html/admin/module/member2343rfwfsda.php on line 12
+[24-May-2010 22:55:13] PHP Parse error:  syntax error, unexpected T_STRING in /home/joabhome/public_html/admin/module/member2343rfwfsda.php on line 12

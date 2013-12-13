@@ -1,0 +1,11 @@
+# -FrontPage-
+
+Options None
+
+<Limit GET POST PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName joabhomearts.com
+AuthUserFile /home/joabhome/public_html/_vti_pvt/service.pwd
+AuthGroupFile /home/joabhome/public_html/_vti_pvt/service.grp

@@ -1,0 +1,461 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Text in function
+#: lightly/library/widgets/social.php:1
+#: lightly/library/widgets/social.php:36
+msgid ""
+msgstr ""
+
+#. Text in function
+#: lightly/library/metaboxes.php:43
+msgid " Featured video"
+msgstr ""
+
+#. Text in function
+#: lightly/library/plus62-helper.php:339
+msgid " of "
+msgstr ""
+
+#. Text in function
+#: lightly/comments.php:23
+msgid "% Responses"
+msgstr ""
+
+#. Text in function
+#: lightly/functions.php:119
+msgid "%1$s"
+msgstr ""
+
+#. Text in function
+#: lightly/index.php:82
+#: lightly/search.php:59
+#: lightly/archive-page.php:69
+#: lightly/archive.php:81
+msgid "&laquo; Older Entries"
+msgstr ""
+
+#. Text in function
+#: lightly/single.php:38
+msgid "&larr; Previous Post"
+msgstr ""
+
+#. Text in echo
+#: lightly/comments.php:103
+msgid "(*) Required, Your email will not be published"
+msgstr ""
+
+#. Text in function
+#: lightly/functions.php:120
+msgid "(Edit)"
+msgstr ""
+
+#. Text in echo
+#: lightly/404.php:13
+msgid "404 Not Found"
+msgstr ""
+
+#. Text in function
+#: lightly/functions.php:118
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#. Text in echo
+#: lightly/archive-page.php:29
+msgid "Archives"
+msgstr ""
+
+#. Text in echo
+#: lightly/search.php:106
+#: lightly/404.php:53
+msgid "Archives by Month:"
+msgstr ""
+
+#. Text in echo
+#: lightly/search.php:110
+#: lightly/404.php:57
+msgid "Archives by Subject:"
+msgstr ""
+
+#. Text in echo
+#: lightly/attachment.php:38
+#: lightly/single.php:41
+msgid "Author"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/tabs.php:1
+msgid "Browse Archives"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/tabs.php:1
+msgid "Browse Categories"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/tabs.php:1
+msgid "Browse Pages"
+msgstr ""
+
+#. Text in echo
+#: lightly/library/plus62-helper.php:338
+msgid "Cannot Retrieved a Related Posts Yet!"
+msgstr ""
+
+#. Text in function
+#: lightly/single.php:20
+msgid "Comment closed"
+msgstr ""
+
+#. Text in echo
+#: lightly/archive.php:25
+msgid "Daily Archives For"
+msgstr ""
+
+#. Text in echo
+#: lightly/404.php:20
+msgid "Error 404, This means that post you are looking for is not available."
+msgstr ""
+
+#. Text in echo
+#: lightly/search.php:93
+#: lightly/404.php:40
+msgid "Last 30 Posts"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/recent_comments.php:1
+#: lightly/library/widgets/recent_comments.php:47
+msgid "Latest Comments"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/flickr.php:28
+msgid "Latest Pictures"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/twitter.php:1
+#: lightly/library/widgets/twitter.php:27
+msgid "Latest Tweet"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/video.php:1
+#: lightly/library/widgets/video.php:56
+msgid "Latest Videos"
+msgstr ""
+
+#. Text in function
+#: lightly/comments.php:60
+msgid "Leave a Reply"
+msgstr ""
+
+#. Text in function
+#: lightly/comments.php:60
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#. Text in echo
+#: lightly/comments.php:69
+msgid "Log in now"
+msgstr ""
+
+#. Text in echo
+#: lightly/comments.php:89
+msgid "Mail"
+msgstr ""
+
+#. Text in echo
+#: lightly/search.php:86
+#: lightly/404.php:33
+msgid "Make sure all words are spelled correctly."
+msgstr ""
+
+#. Text in echo
+#: lightly/archive.php:29
+msgid "Monthly Archives For"
+msgstr ""
+
+#. Text in echo
+#: lightly/library/widgets/flickr.php:27
+msgid "More Photos"
+msgstr ""
+
+#. Text in echo
+#: lightly/library/metaboxes.php:41
+msgid "NOTE: Featured video only works when the selected post format is video format."
+msgstr ""
+
+#. Text in function
+#: lightly/index.php:83
+#: lightly/search.php:60
+#: lightly/archive-page.php:70
+#: lightly/archive.php:82
+msgid "Newer Entries &raquo;"
+msgstr ""
+
+#. Text in function
+#: lightly/attachment.php:15
+msgid "Next Post"
+msgstr ""
+
+#. Text in function
+#: lightly/single.php:37
+msgid "Next Post &rarr;"
+msgstr ""
+
+#. Text in function
+#: lightly/index.php:54
+#: lightly/search.php:33
+#: lightly/archive.php:55
+#: lightly/library/widgets/recent_posts.php:58
+msgid "No Comment"
+msgstr ""
+
+#. Text in echo
+#: lightly/archive-page.php:80
+#: lightly/archive.php:92
+msgid "No Posts Yet"
+msgstr ""
+
+#. Text in function
+#: lightly/comments.php:23
+msgid "No Responses"
+msgstr ""
+
+#. Text in function
+#: lightly/index.php:65
+#: lightly/attachment.php:36
+msgid "OFF"
+msgstr ""
+
+#. Text in function
+#: lightly/comments.php:23
+msgid "One Response"
+msgstr ""
+
+#. Text in function
+#: lightly/library/plus62-helper.php:339
+msgid "Page"
+msgstr ""
+
+#. Text in function
+#: lightly/library/plus62-helper.php:339
+msgid "Page 1 of 1"
+msgstr ""
+
+#. Text in echo
+#: lightly/sidebar-secondary.php:13
+#: lightly/sidebar.php:13
+msgid "Please activate some Widgets."
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/flickr.php:1
+msgid "Plus62 - Flickr"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/video.php:1
+msgid "Plus62 - Latest video"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/recent_comments.php:1
+msgid "Plus62 - Recent Comments"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/recent_posts.php:1
+msgid "Plus62 - Recent Posts"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/social.php:1
+msgid "Plus62 - Social Media Links"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/tabs.php:1
+msgid "Plus62 - Tabs"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/twitter.php:1
+msgid "Plus62 - Twitter"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/tabs.php:1
+msgid "Popular Posts"
+msgstr ""
+
+#. Text in function
+#: lightly/header.php:81
+msgid "Popular Topics:"
+msgstr ""
+
+#. Text in echo
+#: lightly/single.php:32
+msgid "Posted in "
+msgstr ""
+
+#. Text in echo
+#: lightly/archive.php:21
+msgid "Posts By"
+msgstr ""
+
+#. Text in function
+#: lightly/attachment.php:16
+msgid "Previous Post"
+msgstr ""
+
+#. Text in echo
+#: lightly/library/metaboxes.php:29
+msgid "Provider"
+msgstr ""
+
+#. Text in echo
+#: lightly/index.php:61
+#: lightly/search.php:40
+#: lightly/archive-page.php:49
+#: lightly/archive.php:62
+msgid "Read Post &rarr;"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/tabs.php:1
+#: lightly/library/widgets/recent_posts.php:1
+#: lightly/library/widgets/recent_posts.php:82
+msgid "Recent Posts"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/tabs.php:1
+msgid "Recent Response"
+msgstr ""
+
+#. Text in echo
+#: lightly/attachment.php:47
+#: lightly/single.php:50
+msgid "Related Posts"
+msgstr ""
+
+#. Text in function
+#: lightly/functions.php:133
+msgid "Search"
+msgstr ""
+
+#. Text in echo
+#: lightly/search.php:12
+msgid "Search Result"
+msgstr ""
+
+#. Text in function
+#: lightly/functions.php:133
+msgid "Search for:"
+msgstr ""
+
+#. Text in echo
+#: lightly/search.php:73
+msgid "Search return zero result."
+msgstr ""
+
+#. Text in echo
+#: lightly/archive-page.php:83
+#: lightly/archive.php:95
+msgid "Sorry, What you were looking for is not here."
+msgstr ""
+
+#. Text in echo
+#: lightly/search.php:83
+#: lightly/404.php:30
+msgid "Suggestions :"
+msgstr ""
+
+#. Text in echo
+#: lightly/archive.php:17
+msgid "Tagged By"
+msgstr ""
+
+#. Text in function
+#: lightly/library/widgets/tabs.php:1
+msgid "Tags"
+msgstr ""
+
+#. Text in echo
+#: lightly/comments.php:12
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#. Text in echo
+#: lightly/search.php:88
+#: lightly/404.php:35
+msgid "Try different keywords."
+msgstr ""
+
+#. Text in echo
+#: lightly/search.php:90
+#: lightly/404.php:37
+msgid "Try more general keywords."
+msgstr ""
+
+#. Text in echo
+#: lightly/search.php:79
+#: lightly/404.php:26
+msgid "Try search something"
+msgstr ""
+
+#. Text in function
+#: lightly/functions.php:133
+msgid "Type your search here"
+msgstr ""
+
+#. Text in echo
+#: lightly/library/metaboxes.php:37
+msgid "Video ID/URL"
+msgstr ""
+
+#. Text in echo
+#: lightly/archive.php:33
+msgid "Yearly Archives For"
+msgstr ""
+
+#. Text in echo
+#: lightly/comments.php:69
+msgid "You must be login to post a comment."
+msgstr ""
+
+#. Text in echo
+#: lightly/comments.php:90
+msgid "Your Email"
+msgstr ""
+
+#. Text in echo
+#: lightly/comments.php:85
+msgid "Your Name"
+msgstr ""
+
+#. Text in echo
+#: lightly/comments.php:95
+msgid "Your Website"
+msgstr ""
+
+#. Text in echo
+#: lightly/functions.php:124
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. Text in echo
+#: lightly/footer.php:29
+msgid "is powered by"
+msgstr ""
+
+#. Text in echo
+#: lightly/library/metaboxes.php:39
+msgid "use the video id if you choose vimeo or youtube provider, and video URL if you choose self hosted video"
+msgstr ""

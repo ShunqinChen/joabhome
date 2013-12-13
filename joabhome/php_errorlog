@@ -1,0 +1,20 @@
+[20-Mar-2009 22:38:50] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home/joabhome/public_html/productlist.php on line 941
+[20-Mar-2009 22:38:50] PHP Parse error:  syntax error, unexpected '<' in /home/joabhome/public_html/productlist.php on line 941
+[20-Mar-2009 22:50:17] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home/joabhome/public_html/productlist.php on line 934
+[20-Mar-2009 22:50:17] PHP Parse error:  syntax error, unexpected '<' in /home/joabhome/public_html/productlist.php on line 934
+[20-Mar-2009 23:01:33] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home/joabhome/public_html/product.php on line 344
+[20-Mar-2009 23:01:33] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/joabhome/public_html/product.php on line 344
+[22-Jun-2009 23:18:48] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required './admin/comm/mysqldb.php' (include_path='.:/usr/local/php52/pear') in /home/joabhome/public_html/show.php on line 33
+[26-Dec-2009 01:49:01] PHP Parse error:  syntax error, unexpected $end in /home/joabhome/public_html/productlist_new.php on line 1352
+[26-Dec-2009 01:50:55] PHP Parse error:  syntax error, unexpected T_ECHO in /home/joabhome/public_html/productlist_new.php on line 521
+[03-Oct-2012 20:14:52] PHP Fatal error:  Call to a member function GetAll() on a non-object in /home/joabhome/public_html/menu.php on line 72
+[07-Aug-2013 09:51:43 CST6CDT] PHP Parse error:  syntax error, unexpected T_STRING in /home/joabhome/public_html/show.php on line 1
+[07-Aug-2013 09:55:41 CST6CDT] PHP Parse error:  syntax error, unexpected T_STRING in /home/joabhome/public_html/show.php on line 1
+[07-Aug-2013 09:57:23 CST6CDT] PHP Parse error:  syntax error, unexpected T_STRING in /home/joabhome/public_html/show.php on line 1
+[07-Aug-2013 09:57:24 CST6CDT] PHP Parse error:  syntax error, unexpected T_STRING in /home/joabhome/public_html/show.php on line 1
+[07-Aug-2013 09:57:49 CST6CDT] PHP Parse error:  syntax error, unexpected T_STRING in /home/joabhome/public_html/show.php on line 1
+[07-Aug-2013 10:39:57 CST6CDT] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/joabhome/public_html/myshop.php on line 80
+[07-Aug-2013 10:43:47 CST6CDT] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/joabhome/public_html/myshop.php on line 80
+[07-Aug-2013 10:47:27 CST6CDT] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ',' or ';' in /home/joabhome/public_html/myshop.php on line 80
+[07-Aug-2013 10:49:33 CST6CDT] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ',' or ';' in /home/joabhome/public_html/myshop.php on line 80
+[07-Aug-2013 11:55:33 CST6CDT] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/joabhome/public_html/myshop.php on line 85

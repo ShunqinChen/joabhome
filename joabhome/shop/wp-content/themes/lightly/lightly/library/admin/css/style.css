@@ -1,0 +1,5 @@
+hr{ border:none; border-bottom:#ccc 1px solid; }
+.text-style input, .textarea-style textarea, .file-url { width:90%; }
+.multiple-style select, .multiple2-style select{ width:90%; height:auto; min-height:80px;}
+.check-style input{ margin-right:10px; }
+.uploaded-image img{  max-width:100%; height:auto; position:relative; }

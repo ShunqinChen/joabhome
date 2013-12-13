@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel='stylesheet' type='text/css' href="/admin/other/css.css"></link>
+<title>无标题文档</title>
+</head>
+<body>
+<div class="sectionHeader">留言列表</div>
+<div class="sectionBody">
+
+
+<form name="form2" action="index.php" method="post" >
+<table width=95% border="0" class="grid">
+
+  <tr>
+    <td class="gridHeader">Subject</td>
+    <td class="gridHeader">Content</td>
+    <td class="gridHeader">Name</td>
+    <td class="gridHeader">Tel</td>
+    <td class="gridHeader">E-mail</td>
+    <td class="gridHeader">时间</td>
+    <td class="gridHeader">操作</td>
+
+  </tr> 
+  <!-- BEGIN rows --> 
+  <tr>
+    <td class="row2">{Subject}</td>
+    <td class="row2">{Content}</td>
+    <td class="row2">{Name}</td>
+    <td class="row2">{Tel}</td>
+	<td class="row2">{email}</td>
+	<td class="row2">{up_date}</td>
+	<td class="row2"><a href='#' onclick="if(confirm('确定删除！')) location.href='/printing/admin/index.php?mod=getbookdel&id={id}'"><img src='other/images/del.png' /></a></td>
+  </tr>
+  <!-- END rows -->
+  <tr><td class="row1" colspan="7">{links}</td></tr>
+</table>
+</form>
+
+</div>
+</div>
+</body>
+</html>

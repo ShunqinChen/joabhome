@@ -1,0 +1,17 @@
+/*----META BUTTON STUFF-----*/
+#topBanner,
+#content,
+#footerBanner,
+#menu,
+#dropmenu li ul,
+#sidebar { background: #000; }
+
+.close,
+.flyer h4 { background: #111;}
+
+#dropmenu li a:hover,
+#dropmenu li.current_page_item a, #dropmenu li.current-cat a,
+#commentform input[type="submit"]:hover, 
+input[type="submit"]:hover {background: #222;}
+
+input[type="submit"] {background: #333; }

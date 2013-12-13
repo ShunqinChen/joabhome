@@ -1,0 +1,596 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript">
+//<![CDATA[
+function ot(id,flag) {
+	if (flag!=true && document.getElementById('openst').value!='' && document.getElementById('openst').value!=id) {
+		ot(document.getElementById('openst').value,true);
+	}
+	var t =    document.getElementById(id);
+	var subt = document.getElementById(id + '_s');
+	var tm = document.getElementById(id + '_m');
+	var tu = document.getElementById(id + '_p');
+	var display = subt.style.display;
+	if (display=='block') {
+		t.className = 'm1';
+		tm.className = '';
+		subt.style.display = 'none';
+		tu.src="template/images/jia.gif";
+		document.getElementById('openst').value = '';
+	} else {
+		t.className = 'm1  m1_bg';
+		tm.className = 'h3_b2';
+		subt.style.display = 'block';
+		tu.src="template/images/juan.gif";
+		document.getElementById('openst').value = id;
+	}
+}
+function go (fid) {
+	op_url = "secAudi.jsp?dec=note_admin&type_id="+fid;
+	window.open(op_url,'');
+}
+//]]> 
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>无标题文档</title>
+<link href="img/css.css" rel="stylesheet" type="text/css">
+</head>
+<style type="text/css">
+BODY {
+	BACKGROUND-POSITION: center 50%; BACKGROUND-IMAGE: url(img/background_tile.gif); MARGIN: 0px; BACKGROUND-REPEAT: repeat-y; BACKGROUND-COLOR: #cedce9; TEXT-ALIGN: center
+}
+</style>
+<body topmargin="0" leftmargin="o" rightmargin="0" bottommargin="0" >
+<table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td height="126" colspan="2" valign="top" background="img/banner.jpg" > <div align="left"> 
+        <OBJECT classid=clsid:D27CDB6E-AE6D-11cf-96B8-444553540000 
+      codeBase=http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0 
+      height=110 width=783>
+          <PARAM NAME="movie" VALUE="img/flash.swf">
+          <PARAM NAME="quality" VALUE="high">
+          <PARAM NAME="WMODE" VALUE="transparent">
+          <embed src="img/flash.swf" quality="high" 
+      pluginspage="http://www.macromedia.com/go/getflashplayer" 
+      type="application/x-shockwave-flash" width="783" height="110"></embed> </OBJECT>
+      </div></td>
+  </tr>
+  <tr bgcolor="#FFFFFF"> 
+    <td height="27" colspan="2" valign="top"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td><img src="img/title_01.jpg" width="71" height="26"></td>
+          <td><img src="img/title_02.jpg" width="75" height="26"></td>
+          <td><img src="img/title_03.jpg" width="74" height="26"></td>
+          <td><img src="img/title_04.jpg" width="84" height="26"></td>
+          <td><img src="img/title_05.jpg" width="98" height="26"></td>
+          <td><img src="img/title_06.jpg" width="81" height="26"></td>
+          <td><img src="img/title_07.jpg" width="49" height="26"></td>
+          <td><img src="img/title_08.jpg" width="108" height="26"></td>
+          <td><img src="img/title_09.jpg" width="145" height="26"></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr bgcolor="#FFFFFF"> 
+    <td height="16" valign="top"><img src="img/user.jpg" width="191" height="21"></td>
+    <td height="16" valign="top"><img src="img/cobrief.jpg" width="594" height="21"></td>
+  </tr>
+  <tr> 
+    <td width="190" height="1000" valign="top" background="img/lbg.jpg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height=8 colspan="2"></td>
+        </tr>
+        <tr> 
+          <td height="58" colspan="2" valign="top"> <form name="form1" method="post" action="">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td width="42%" height="19"> <div align="right"> 
+                      <p class="12">username:</p>
+                    </div></td>
+                  <td width="58%"><input name="textfield" type="text" class="input" size="15"></td>
+                </tr>
+                <tr> 
+                  <td height="23"> <div align="right"> 
+                      <p class="12">password:</p>
+                    </div></td>
+                  <td><input name="textfield2" type="text" class="input" size="15"></td>
+                </tr>
+                <tr> 
+                  <td colspan="2"><div align="center"> 
+                      <input name="Submit" type="image" src="img/login.gif">
+                      &nbsp; <img src="img/register.gif" width="60" height="16"></div></td>
+                </tr>
+              </table>
+            </form></td>
+        </tr>
+        <tr> 
+          <td height="1" colspan="2" background=img/line.gif></td>
+        </tr>
+        <tr> 
+          <td height="0" colspan="2" valign="top"> 
+            <input id="openst" type="hidden" value="" />
+            <table id="t_1" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr id="t_1_m"> 
+                <td width="178" height="28" background="img/cl1.gif"> <div align="center"><a href="javascript:ot('t_1')" class="14">Big 
+                    class</a> </div></td>
+              </tr>
+              <tr id="t_1_s" style="display:none;"> 
+                <td height="70" valign="top"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr > 
+                      <td width="33%" height="16"> <div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" height="16" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table> 
+          </td>
+        </tr>
+        <tr> 
+          <td height="0" colspan="2"> 
+            <table id="t_2" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr id="t_2_m"> 
+                <td width="178" height="28" background="img/cl1.gif">
+				<div align="center">
+                    <p ><a href="javascript:ot('t_2')" class="14">Big class</a> 
+                    </p>
+                  </div>
+				</td>
+              </tr>
+			  
+              <tr id="t_2_s" style="display:none;"> 
+                <td height="70" valign="top"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr > 
+                      <td width="33%" height="16"> <div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" height="16" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr> 
+          <td height="0" colspan="2">
+<table id="t_3" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr id="t_3_m"> 
+                <td width="178" height="28" background="img/cl1.gif"> <div align="center"><a href="javascript:ot('t_3')" class="14">Big 
+                    class</a> </div></td>
+              </tr>
+              <tr id="t_3_s" style="display:none;"> 
+                <td height="70" valign="top"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr > 
+                      <td width="33%" height="16"> <div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" height="16" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+		<tr><td colspan=2>
+		<table id="t_4" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr id="t_4_m"> 
+                <td width="178" height="28" background="img/cl1.gif"> <div align="center"><a href="javascript:ot('t_4')" class="14">Big 
+                    class</a> </div></td>
+              </tr>
+              <tr id="t_4_s" style="display:none;"> 
+                <td height="70" valign="top"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr > 
+                      <td width="33%" height="16"> <div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" height="16" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                    <tr> 
+                      <td width="33%"><div align="right"><img src="img/line_tri.gif" width="19" height="16"></div></td>
+                      <td width="4%"><img src="img/mark.gif" width="5" height="5"></td>
+                      <td width="63%" class="12">small class</td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+		
+		</td></tr>
+        <tr> 
+          <td height="1" colspan="2" background=img/line.gif></td>
+        </tr>
+        <tr> 
+          <td width="22%" height="42" valign="middle"> <div align="center"><img src="img/list.gif" width="25" height="26"></div></td>
+          <td width="78%" valign="middle"><img src="img/list1.gif" width="109" height="11"></td>
+        </tr>
+        <tr> 
+          <td height="54" colspan="2" valign="top" class="13"><table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr> 
+                <td class="13">Our main art subjects: oil painting reproduction, 
+                  portrait oil painting, abstract oil painting, landscape oil 
+                  painting, modern oil paintings, still life oil painting, animal 
+                  oil painting, pencil drawing, watercolour, impression oil paintings 
+                  and other art oil paintings. All of these oil paintings, watercolor, 
+                  and pencil sketches are from our artists. </td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+    <td width="595" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="50%"> <table border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr> 
+                <td width="280" height="180" background="img/bg1.jpg" align="center"> 
+                  <script type="text/javascript">
+function i(url,w,h){
+      document.write('<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="'+w+'" height="'+h+'"> ');
+      document.write('<param name="movie" value="' + url + '">');
+      document.write('<param name="quality" value="high"> ');
+      document.write('<param name="wmode" value="transparent"> ');
+      document.write('<param name="menu" value="false"> ');
+      document.write('<embed src="' + url + '" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="'+w+'" height="'+h+'"></embed> ');
+      document.write('</object> ');
+}
+imgUrl1="img/ad/1.jpg";
+imgtext1="石头美人记"
+imgLink1=escape("redirect.php?url=http://shop34951680.taobao.com");
+imgUrl2="img/ad/2.jpg";
+imgtext2="期刊"
+imgLink2=escape("/periodical.php");
+imgUrl3="img/ad/3.jpg";
+imgtext3="大都市广告"
+imgLink3=escape("http://biba.metropolis-mag.com/");
+imgUrl4="img/ad/4.jpg";
+imgtext4="ECOSME与PClady合作风尚盛典"
+imgLink4=escape("redirect.php?url=http://play4.pclady.com.cn/pclady071217/?ad=797");
+imgtext5="ECOSME与PClady合作风尚盛典"
+imgLink5=escape("redirect.php?url=http://play4.pclady.com.cn/pclady071217/?ad=797");
+
+ var focus_width=250
+ var focus_height=150
+ var text_height=0
+ var swf_height = focus_height+text_height
+ var pics=imgUrl1+"|"+imgUrl2+"|"+imgUrl3+"|"+imgUrl4
+ var links=imgLink1+"|"+imgLink2+"|"+imgLink3+"|"+imgLink4
+ var texts=imgtext1+"|"+imgtext2+"|"+imgtext3+"|"+imgtext4
+ i('img/ad/focus1.swf?pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'',250,150);
+   </script>
+                </td>
+                <td width="6" valign="top" background="img/shadowl_12.jpg"><img src="img/shadowl_02.jpg" width="6" height="6"></td>
+              </tr>
+              <tr> 
+                <td width="173" height="6" background="img/shadowl_21.jpg"><img src="img/shadowl_20.jpg"></td>
+                <td width="6" height="6" align="left" valign="top"><img src="img/shadowl_22.jpg" width="6" height="6"></td>
+              </tr>
+            </table></td>
+          <td width="50%" valign="top"  class="13"> <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr> 
+                <td  class="13">Our main art subjects: oil painting reproduction, 
+                  portrait oil painting, abstract oil painting, landscape oil 
+                  painting, modern oil paintings, still life oil painting, animal 
+                  oil painting, pencil drawing, watercolour, impression oil paintings 
+                  and other art oil paintings. All of these oil paintings, watercolor, 
+                  and pencil sketches are from our artists.</td>
+              </tr>
+            </table></td>
+        </tr>
+       
+      </table><img src="img/prolist.jpg">
+      <table width="590" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td height="230"> <div align="center"> 
+              <table width="190" height="219" border="0" cellpadding="0" cellspacing="0" style="border-left:1px solid #9CC6B8;border-top:1px solid #9CC6B8;border-right:1px solid #9CC6B8;border-bottom:1px solid #9CC6B8;">
+                <tr> 
+                  <td height="118"> <table width="179" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr> 
+                        <td width="173" height="71"><img src="img/163750_PL.jpg" width="150" height="112"></td>
+                        <td width="6" valign="top" background="img/shadowl_12.jpg"><img src="img/shadowl_02.jpg" width="6" height="6"></td>
+                      </tr>
+                      <tr> 
+                        <td width="173" height="6" background="img/shadowl_21.jpg"><img src="img/shadowl_20.jpg"></td>
+                        <td width="6" height="6" align="left" valign="top"><img src="img/shadowl_22.jpg" width="6" height="6"></td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr> 
+                  <td height="20" class="12"> <div align="center">see larger image 
+                    </div></td>
+                </tr>
+                <tr> 
+                  <td height="20" class="12"><div align="center">Fat Cat Capsizing</div></td>
+                </tr>
+                <tr> 
+                  <td height="19" class="12"><div align="center">$19.99</div></td>
+                </tr>
+                <tr> 
+                  <td height="16"><img src="img/product_seeitframed.gif" width="93" height="33"><img src="img/product_addtocart.gif" width="94" height="33"></td>
+                </tr>
+              </table>
+            </div></td>
+          <td height="230"> <div align="center"> 
+              <table width="190" height="219" border="0" cellpadding="0" cellspacing="0" style="border-left:1px solid #9CC6B8;border-top:1px solid #9CC6B8;border-right:1px solid #9CC6B8;border-bottom:1px solid #9CC6B8;">
+                <tr> 
+                  <td height="118"> <table width="179" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr> 
+                        <td width="173" height="71"><img src="img/163750_PL.jpg" width="150" height="112"></td>
+                        <td width="6" valign="top" background="img/shadowl_12.jpg"><img src="img/shadowl_02.jpg" width="6" height="6"></td>
+                      </tr>
+                      <tr> 
+                        <td width="173" height="6" background="img/shadowl_21.jpg"><img src="img/shadowl_20.jpg"></td>
+                        <td width="6" height="6" align="left" valign="top"><img src="img/shadowl_22.jpg" width="6" height="6"></td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr> 
+                  <td height="20" class="12"> <div align="center">see larger image 
+                    </div></td>
+                </tr>
+                <tr> 
+                  <td height="20" class="12"><div align="center">Fat Cat Capsizing</div></td>
+                </tr>
+                <tr> 
+                  <td height="19" class="12"><div align="center">$19.99</div></td>
+                </tr>
+                <tr> 
+                  <td height="16"><img src="img/product_seeitframed.gif" width="93" height="33"><img src="img/product_addtocart.gif" width="94" height="33"></td>
+                </tr>
+              </table>
+            </div></td>
+          <td><div align="center"> 
+              <table width="190" height="219" border="0" cellpadding="0" cellspacing="0" style="border-left:1px solid #9CC6B8;border-top:1px solid #9CC6B8;border-right:1px solid #9CC6B8;border-bottom:1px solid #9CC6B8;">
+                <tr> 
+                  <td height="118"> <table width="179" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr> 
+                        <td width="173" height="71"><img src="img/163750_PL.jpg" width="150" height="112"></td>
+                        <td width="6" valign="top" background="img/shadowl_12.jpg"><img src="img/shadowl_02.jpg" width="6" height="6"></td>
+                      </tr>
+                      <tr> 
+                        <td width="173" height="6" background="img/shadowl_21.jpg"><img src="img/shadowl_20.jpg"></td>
+                        <td width="6" height="6" align="left" valign="top"><img src="img/shadowl_22.jpg" width="6" height="6"></td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr> 
+                  <td height="20" class="12"> <div align="center">see larger image 
+                    </div></td>
+                </tr>
+                <tr> 
+                  <td height="20" class="12"><div align="center">Fat Cat Capsizing</div></td>
+                </tr>
+                <tr> 
+                  <td height="19" class="12"><div align="center">$19.99</div></td>
+                </tr>
+                <tr> 
+                  <td height="16"><img src="img/product_seeitframed.gif" width="93" height="33"><img src="img/product_addtocart.gif" width="94" height="33"></td>
+                </tr>
+              </table>
+            </div></td>
+        </tr>
+        <tr> 
+          <td height="230"><table width="190" height="219" border="0" align="center" cellpadding="0" cellspacing="0" style="border-left:1px solid #9CC6B8;border-top:1px solid #9CC6B8;border-right:1px solid #9CC6B8;border-bottom:1px solid #9CC6B8;">
+              <tr> 
+                <td height="118"> <table width="179" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr> 
+                      <td width="173" height="71"><img src="img/163750_PL.jpg" width="150" height="112"></td>
+                      <td width="6" valign="top" background="img/shadowl_12.jpg"><img src="img/shadowl_02.jpg" width="6" height="6"></td>
+                    </tr>
+                    <tr> 
+                      <td width="173" height="6" background="img/shadowl_21.jpg"><img src="img/shadowl_20.jpg"></td>
+                      <td width="6" height="6" align="left" valign="top"><img src="img/shadowl_22.jpg" width="6" height="6"></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr> 
+                <td height="20" class="12"> <div align="center">see larger image 
+                  </div></td>
+              </tr>
+              <tr> 
+                <td height="20" class="12"><div align="center">Fat Cat Capsizing</div></td>
+              </tr>
+              <tr> 
+                <td height="19" class="12"><div align="center">$19.99</div></td>
+              </tr>
+              <tr> 
+                <td height="16"><img src="img/product_seeitframed.gif" width="93" height="33"><img src="img/product_addtocart.gif" width="94" height="33"></td>
+              </tr>
+            </table></td>
+          <td><div align="center"> 
+              <table width="190" height="219" border="0" cellpadding="0" cellspacing="0" style="border-left:1px solid #9CC6B8;border-top:1px solid #9CC6B8;border-right:1px solid #9CC6B8;border-bottom:1px solid #9CC6B8;">
+                <tr> 
+                  <td height="118"> <table width="179" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr> 
+                        <td width="173" height="71"><img src="img/163750_PL.jpg" width="150" height="112"></td>
+                        <td width="6" valign="top" background="img/shadowl_12.jpg"><img src="img/shadowl_02.jpg" width="6" height="6"></td>
+                      </tr>
+                      <tr> 
+                        <td width="173" height="6" background="img/shadowl_21.jpg"><img src="img/shadowl_20.jpg"></td>
+                        <td width="6" height="6" align="left" valign="top"><img src="img/shadowl_22.jpg" width="6" height="6"></td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr> 
+                  <td height="20" class="12"> <div align="center">see larger image 
+                    </div></td>
+                </tr>
+                <tr> 
+                  <td height="20" class="12"><div align="center">Fat Cat Capsizing</div></td>
+                </tr>
+                <tr> 
+                  <td height="19" class="12"><div align="center">$19.99</div></td>
+                </tr>
+                <tr> 
+                  <td height="16"><img src="img/product_seeitframed.gif" width="93" height="33"><img src="img/product_addtocart.gif" width="94" height="33"></td>
+                </tr>
+              </table>
+            </div></td>
+          <td><div align="center"> 
+              <table width="190" height="219" border="0" cellpadding="0" cellspacing="0" style="border-left:1px solid #9CC6B8;border-top:1px solid #9CC6B8;border-right:1px solid #9CC6B8;border-bottom:1px solid #9CC6B8;">
+                <tr> 
+                  <td height="118"> <table width="179" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr> 
+                        <td width="173" height="71"><img src="img/163750_PL.jpg" width="150" height="112"></td>
+                        <td width="6" valign="top" background="img/shadowl_12.jpg"><img src="img/shadowl_02.jpg" width="6" height="6"></td>
+                      </tr>
+                      <tr> 
+                        <td width="173" height="6" background="img/shadowl_21.jpg"><img src="img/shadowl_20.jpg"></td>
+                        <td width="6" height="6" align="left" valign="top"><img src="img/shadowl_22.jpg" width="6" height="6"></td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr> 
+                  <td height="20" class="12"> <div align="center">see larger image 
+                    </div></td>
+                </tr>
+                <tr> 
+                  <td height="20" class="12"><div align="center">Fat Cat Capsizing</div></td>
+                </tr>
+                <tr> 
+                  <td height="19" class="12"><div align="center">$19.99</div></td>
+                </tr>
+                <tr> 
+                  <td height="16"><img src="img/product_seeitframed.gif" width="93" height="33"><img src="img/product_addtocart.gif" width="94" height="33"></td>
+                </tr>
+              </table>
+            </div></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr> 
+    <td height="147" colspan="2" valign="top" background="img/bbg.gif"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td height="40">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td><div align="center"> 
+              <p class="12">contact us | satisfaction policy | frequently asked 
+                questions </p>
+            </div></td>
+        </tr>
+        <tr> 
+          <td height="40">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td><div align="center"><img src="img/bt.jpg" width="660" height="44"></div></td>
+        </tr>
+        <tr> 
+          <td><div align="center"> 
+              <p class="12">@ 2008 Joab Home Arts CO.,LTD All rights reserved.<br>
+              </p>
+            </div></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>

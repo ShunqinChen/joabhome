@@ -1,0 +1,44 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+</head>
+<style>
+body,td,th {
+	font-size: 15px;
+}
+.a1{
+background :#999999
+}
+</style>
+<body>
+
+<table border="1">
+	<tr>
+	<td>序号</td>
+	<td>产品图片</td>
+	<td>所属类别</td>
+	<td>产品标题</td>
+	<td>操作</td>
+	</tr>
+<!-- BEGIN links --> 
+	<tr>
+	<td>{id}</td>
+	<td>{pic_name}</td>
+	
+<!-- IF type_id="1" --> <td>游戏原画区城</td><!-- ENDIF -->
+<!-- IF type_id="2" --> <td>动画区城</td><!-- ENDIF -->
+<!-- IF type_id="3" --> <td>商业插画区</td><!-- ENDIF -->
+<!-- IF type_id="4" --> <td>教师作品区</td><!-- ENDIF -->
+<!-- IF type_id="5" --> <td>学生作品区</td><!-- ENDIF -->
+	<td>{title_name}</td>
+	<td><a href="?mod=picEdit&id={id}">修改</a>&nbsp;&nbsp;<a href='#' onclick="if(confirm('确定删除！')) location.href='?mod=picDel&id={id}&oldpic={pic_name}'">删除</a></td>
+	</tr>
+<!-- END links -->
+
+</table>
+
+</body>
+</html>
