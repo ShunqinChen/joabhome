@@ -7,8 +7,8 @@ class mysqldb {
 //	var $password = '5736811';
 	var $datebase = 'joabhome_jiankuncai';
 	function  __construct(){
-		//$path = '/home/joabhome/public_html/admin/';	//上线请解开注释
-		$path = './admin/';
+		$path = '/home/joabhome/public_html/admin/';	//上线请解开注释
+		//$path = './admin/';
 		$fp = fopen($path.'dataconfig.ini','r');	//读取文件流
 		$string = fread($fp,1000);
 		$adminarray = explode('|',$string);

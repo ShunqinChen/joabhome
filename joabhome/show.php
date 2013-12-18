@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * 商品明细页面，选择数据后点击ADD TO CART将通过form提交至myshop.php
+ * 
+ * */
 
 //header("Cache-control: private"); //防止后退刷新 
 
@@ -11,10 +14,10 @@ require_once "./admin/comm/mysqldb.php";
 //print_r($db)
 
 
-
+//获取product.php传递的pro_id参数，即pro_info的主键，这里por_id属历史错误暂不做修改 pro = product
 if($_REQUEST['por_id']){
 
-	writeTabel($_REQUEST['por_id']);
+	writeTabel($_REQUEST['por_id']);	//更新pro_info的hkfm 估计是付款方数此处+1不知做何用，没实际意义啊
 
 }
 
@@ -23,7 +26,7 @@ if($_REQUEST['por_id']){
 
 
 
-
+//查询二级产品明细
 $sql = "select * from pro_info where id=".$_REQUEST['por_id'];
 
 $rows = $db->GetAll($sql);
@@ -33,7 +36,7 @@ $rows = $db->GetAll($sql);
 
 
 
-
+//查询一级产品分类信息
 $sql = "select * from pro_type where id=".$rows[0]['p_type_id'];
 
 $secendResult = $db->GetAll($sql);
@@ -43,7 +46,7 @@ $secendResult = $db->GetAll($sql);
 
 
 
-
+//查询四级产品分类信息
 $sql = "select * from pro_type where id=".$secendResult[0]['pid'];
 
 $thResult = $db->GetAll($sql);
@@ -53,10 +56,8 @@ $thResult = $db->GetAll($sql);
 
 
 
-
+//查询五级产品分类信息
 $sql = "select * from pro_type where id=".$thResult[0]['pid'];
-
-
 
 $fResult = $db->GetAll($sql);
 
@@ -65,7 +66,7 @@ $fResult = $db->GetAll($sql);
 
 
 
-
+//这个居然是导航条？！ 这么烂的代码！！
 if($fResult){$st .= '<a href="./product.php?type_id='.$fResult[0]['id'].'">'.$fResult[0]['type_name'].'</a>';}
 
 
@@ -148,12 +149,13 @@ BODY {
          <td width="43%" height="203"><table width="179" border="0" align="center" cellpadding="0" cellspacing="0">
 
             <tr> 
-
-            <td width="473" height="171">
-            	<a href="admin/productimg/<?php echo $rows[0]['pic']?>" target="_blank">
-            	<img src="admin/productimg/<?php echo $rows[0]['pic']?>" width="250" border=0></a></td>
-             <td width="6" valign="top" background="img/shadowl_12.jpg"><img src="img/shadowl_02.jpg" width="6" height="6"></td>
-
+           	 	<td width="473" height="171">
+            		<a href="admin/productimg/<?php echo $rows[0]['pic']?>" target="_blank">
+            		<img src="admin/productimg/<?php echo $rows[0]['pic']?>" width="250" border=0></a>
+        		</td>
+             	<td width="6" valign="top" background="img/shadowl_12.jpg">
+             		<img src="img/shadowl_02.jpg" width="6" height="6">
+             	</td>
              </tr>
 
              <tr> 
@@ -164,7 +166,8 @@ BODY {
 
               </tr>
 
-            </table></td>
+            </table>
+         </td>
 
 
           <td width="44%" valign="top"> <br>
@@ -251,7 +254,7 @@ if($rows[0]['is_new']=='T'){
 					
 					$rows = $db->GetAll($sql);
 					
-					
+					//拼接商品规格及价格表
 					for($i=0; $i<count($rows); $i++){
 					
 						echo '<tr> 
@@ -276,28 +279,28 @@ if($rows[0]['is_new']=='T'){
 
 
 <?php 
-
-if($_SESSION['username']){
-
-	echo '<input type="image" src="img/addtocart.gif">';
 	
-	echo '<br><a href=http://www.joabhomearts.com/contact.php target=_blank>The specific size kindly contact us directly,we would get back to you within 24 hours.More quantity more discounts.The wholesaler kindly contact us directly.The wholeprice is offered.</a>';
+	//判断用户是否登陆
+	if($_SESSION['username']){
 
-
+		echo 	'<input type="image" src="img/addtocart.gif">';
+	
+		echo 	'<br><a href="./contact.php" target=_blank>' .
+					'The specific size kindly contact us directly,we would get back to you within 24 hours.More quantity more discounts.The wholesaler kindly contact us directly.The wholeprice is offered.' .
+				'</a>';
 	}else{
 
-
-		echo "<a href='/reg.php' class=cls12>Sorry, you are not our member yet,please register first.</a>";
+		echo "<a href='/reg.php' class=cls12>Sorry, please login your account.</a>";
 
 	}
 
 ?>
 
-       </form>
+       		</form>
 
-            </div></td>
+        	</div></td>
 
-			       </tr>
+	 	</tr>
 
       </table>
 

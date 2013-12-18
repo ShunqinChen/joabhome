@@ -11,8 +11,8 @@ class mysqldb {
 	var $password = '123456';
 	var $datebase = 'yinshua';*/
 	function  __construct(){
-		//$path = '/home/joabhome/public_html/printing/admin/';
-		$path = './admin/';
+		$path = '/home/joabhome/public_html/printing/admin/';
+		//$path = './admin/';
 		$fp = fopen($path.'dataconfig.ini','r');
 		$string = fread($fp,1000);
 		$adminarray = explode('|',$string);
