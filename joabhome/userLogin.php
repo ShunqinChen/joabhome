@@ -6,7 +6,7 @@ if($_REQUEST['logoutsub']){
 
 	$_SESSION['username']='';
 
-	echo "<script language='javascript'>window.location.href='/index.php';</script>";
+	echo "<script language='javascript'>window.location.href='./index.php';</script>";
 
 }
 
@@ -50,9 +50,8 @@ if($_REQUEST['sub']){
 
 if(!$_SESSION['username']){
 
+?>
 
-
-	echo <<<html_login
 
 <script language="JAVASCRIPT" src="/admin/other/js.js"></script>
 
@@ -127,17 +126,16 @@ frm.addV("password", "req", "password not null");
 </script>  
 
 
-html_login;
 
-
+<?php
 
 }else {
 
 
 
-	echo "<div align=center class=cls12>Welcome ".$_SESSION['username'];
-
-	echo "<form action=''><input type='hidden' name='logoutsub' value='Sign out' class='input'><input  type='image' src='img/sign-out.jpg' name='sub' value='提交'></from></div>";
+	echo '<div align=center class=cls12>Welcome '.$_SESSION['username'].
+		  '	<div ><a href="./tradelist.php" target="_blank">History Order</a></div>';
+	echo '<form action="" style="padding:0;margin:0;"><input type="hidden" name="logoutsub" value="Sign out" class="input"><input  type="image" src="img/sign-out.jpg" name="sub" value="提交"></from></div>';
 
 
 

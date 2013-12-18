@@ -1,33 +1,23 @@
 <?php
-
+/**
+ * 联系页面
+ * */
 
 require_once "./admin/comm/mysqldb.php"; 
 
 //print_r($db)
 
-
-/*$link = mysql_connect("localhost", "joabhome", "5736811")
-
+?>
 
 
-        or die("Could not connect : " . mysql_error()); 
+<?php
 
-
-
-    mysql_select_db("joabhome_jiankuncai") or die("Could not select database");*/
-
-
-
-
+//获取myshop传递的订单号
+$ordernum = isset($_REQUEST['ordernum']) ? $_REQUEST['ordernum'] : ''; 
 
 
 
 if (($_REQUEST['alias']!="") and ($_REQUEST['msg']!="")) {
-
-
-
- 
-
 
 
   $serial=md5(uniqid(rand()));
@@ -37,7 +27,6 @@ if (($_REQUEST['alias']!="") and ($_REQUEST['msg']!="")) {
   $alias = $_REQUEST['alias'];
 
 
-
   $ip=$_SERVER['REMOTE_ADDR'];
 
 
@@ -45,21 +34,13 @@ if (($_REQUEST['alias']!="") and ($_REQUEST['msg']!="")) {
   $msgdate = time();
 
 
-
   $email = $_REQUEST['email'];
-
-
 
   $msg=$_REQUEST['msg'];
 
-  
-
   $tel=$_REQUEST['tel'];
 
-  
-
   $zipcode=$_REQUEST['zipcode'];
-
 
 
   $flag="1";
@@ -70,11 +51,9 @@ if (($_REQUEST['alias']!="") and ($_REQUEST['msg']!="")) {
 
 
 
-  $query="INSERT into guestbook(serial, alias, ip, msgdate, email, msg, flag,tel,zipcode) 
+  $insert = "INSERT into guestbook(serial, alias, ip, msgdate, email, msg, flag,tel,zipcode) 
 
-
-
-  	values('$serial',  '$alias', '$ip', '$msgdate', '$email', '$msg', '$flag','$tel','$zipcode')";
+  			 VALUES('$serial',  '$alias', '$ip', '$msgdate', '$email', '$msg', '$flag','$tel','$zipcode')";
 
 
 
@@ -83,7 +62,7 @@ if (($_REQUEST['alias']!="") and ($_REQUEST['msg']!="")) {
 
 
 //  mysql_query($query);
-	$db->Execute($query);
+	$db->Execute($insert);
 
 
 
@@ -99,21 +78,13 @@ if (($_REQUEST['alias']!="") and ($_REQUEST['msg']!="")) {
 
 
 
-  //Header("Location: ./guestbook.php");
+  	//Header("Location: ./guestbook.php");
 
 
 
-  exit;
-
-
-
-
-
-
+  	exit;
 
 }
-
-
 
 ?>
 
@@ -137,7 +108,7 @@ if (($_REQUEST['alias']!="") and ($_REQUEST['msg']!="")) {
 
 	<link href="img/css.css" rel="stylesheet" type="text/css">
 
-	<script language="JAVASCRIPT" src="/admin/other/js.js"></script>
+	<script type="text/javascript" src="/admin/other/js.js" ></script>
 
 </head>
 
@@ -197,7 +168,7 @@ BODY {
 
 					echo nl2br($result);
 
-			  ?>
+			  	?>
 
               </p>
 
@@ -257,7 +228,7 @@ BODY {
 
                     <div align="right">Subject:</div></td>
 
-                  <td bgcolor="#ffffff"> <input type=text name=zipcode size=18> 
+                  <td bgcolor="#ffffff"> <input type="text" name="zipcode" size="18" value="<?php echo $ordernum; ?>" /> 
 
                     <div align="right"></div></td>
 
@@ -355,11 +326,13 @@ BODY {
 
   <tr> 
 
-    <td height="147" valign="top" background="img/bbg.gif"> <?php
+    <td height="147" valign="top" background="img/bbg.gif"> 
+    	<?php
 
 		  	include("index-bottom.php");
 
-		  ?> </td>
+		  ?> 
+	</td>
 
   </tr>
 

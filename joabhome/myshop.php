@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * 购物车页面
+ * */
 
 //header("Cache-control: private");	//防止后退刷新
 
@@ -30,7 +32,7 @@ $js = $xajax->getJavascript('./xajax/');
 	<title>My Cart</title>
 	<?php echo $js;?> 
 	<link href="img/css.css" rel="stylesheet" type="text/css">
-
+ 	<script type="text/javascript" src="./resource/js/jquery-1.9.1.min.js"></script>
 	<style type="text/css">
 	
 	BODY {
@@ -44,7 +46,7 @@ $js = $xajax->getJavascript('./xajax/');
 
 <body topmargin="0" leftmargin="o" rightmargin="0" bottommargin="0" >
 
-<table width="720" border="0" align="center" cellpadding="0" cellspacing="0">
+<table width="720" border="0" align="center" cellpadding="0" cellspacing="0" style="border:1px solid white;">
 	<!-- top -->
 	<tr> 
 		<td height="126" colspan="2" valign="top"  >
@@ -56,6 +58,7 @@ $js = $xajax->getJavascript('./xajax/');
 	<tr> 
 		<td height="16" valign="middle" bgcolor="#FFFFFF"> </td>
   	</tr>
+  	
 	<!-- content -->
 	<tr> 
 
@@ -139,38 +142,26 @@ $js = $xajax->getJavascript('./xajax/');
 					
 					if($_REQUEST['sub']=='check out'){
 					
-					//	echo $_SESSION['userid'].'sdf';exit;
+						//echo $_SESSION['userid'].'sdf';exit;
 					
-					//	print_r($_SESSION['GlobalArray']);exit;
+						//print_r($_SESSION['GlobalArray']);exit;
 					
 						$ordernum = time(); //订单号
 					
 						$_quantity = $_REQUEST['quantity'];
 					
-					//	PRINT_R($_quantity);EXIT;
+						//	PRINT_R($_quantity);EXIT;
 					
 						for($i=0; $i<count($_SESSION['GlobalArray']); $i++){
 					
-					
-					
-							$array = array('pecif'=>$_SESSION['GlobalArray'][$i]['pecif'],
-					
-					
-					
-									   'proid'=>$_SESSION['GlobalArray'][$i]['numbers'],
-					
-					
-					
-										   'nums'=>$_quantity[$i],
-					
-					//					   'nums'=>$_SESSION['GlobalArray'][$i]['quantity'],
-					
-					//					   'price'=>$_SESSION['GlobalArray'][$i]['totalquantity'],
-					
-										   'price'=>$_SESSION['GlobalArray'][$i]['price'],
-					
-										   'ordernum'=>$ordernum,
-										   'userid'=>$_SESSION['userid']
+							$array = array(	'pecif'=>$_SESSION['GlobalArray'][$i]['pecif'],
+											'proid'=>$_SESSION['GlobalArray'][$i]['numbers'],
+										   	'nums'=>$_quantity[$i],
+					//					   	'nums'=>$_SESSION['GlobalArray'][$i]['quantity'],
+					//					   	'price'=>$_SESSION['GlobalArray'][$i]['totalquantity'],
+										   	'price'=>$_SESSION['GlobalArray'][$i]['price'],
+										   	'ordernum'=>$ordernum,
+										   	'userid'=>$_SESSION['userid']
 					
 											);
 					
@@ -192,7 +183,7 @@ $js = $xajax->getJavascript('./xajax/');
 					
 							echo '<script language="javascript">alert("order successful! \nThank you! Your order number is：'.$ordernum.'");</script>';
 					
-							echo '<script language="javascript">window.location.href = "/contact.php";</script>';
+							echo '<script language="javascript">window.location.href = "./contact.php?ordernum='.$ordernum.'";</script>';	//跳转到订单联系页面
 					
 							exit;
 					
@@ -249,7 +240,7 @@ $js = $xajax->getJavascript('./xajax/');
 					
 					
 					
-					/*把订单列表显示到显面上*/
+					/*把订单列表显示到页面上*/
 					
 					//print_r($GlobalArray);exit;
 					
@@ -353,6 +344,10 @@ $js = $xajax->getJavascript('./xajax/');
 </html>
 
 <script type="text/javascript">
+$(function($) {
+  　
+});
+
 function opear(){
 	xajax_opea(xajax.getFormValues('form1'));
 }

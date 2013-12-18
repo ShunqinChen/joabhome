@@ -168,6 +168,7 @@ $sql = 'SELECT * from pro_info where '.$where ." order by p_up_date desc ";
 genpage($sql);	
 
 
+//echo "<p>".$sql."</p>";
 
 $rows = $db->GetAll($sql);
 
@@ -260,17 +261,14 @@ if($rows){
 
 
 
-echo  '<td height="20" class="cls12">
-			<div align="center">'.$array[$i]['p_name'].$isnew.'</div>
-		</td>
-
+echo  '		<td height="20" class="cls12">
+				<div align="center">'.$array[$i]['p_name'].$isnew.'</div>
+			</td>
  		</tr> 
+ 				
 		<tr>
  			<td height="19" class="cls12"><div align="center">$'.getPrice($array[$i]['id']).'</div></td>
-
   		</tr>
-
-
 
 		<tr> 
 		
@@ -418,191 +416,91 @@ echo  '<td height="20" class="cls12">
 
 
 
-		if($array[$i+1]){
+	if($array[$i+1]){
 
+		++$i;
 
+		//如果是新品的话就显示新品标记
 
-				  ++$i;
+		if($array[$i]['is_new']=='T'){
 
-				  //如果是新品的话就显示新品标记
+			$isnew  = '<img src="./new.gif" />';
 
-				 if($array[$i]['is_new']=='T'){
+		}
 
-				 	$isnew  = '<img src="./new.gif" />';
 
-				 }
+	
+	echo '<td>
+			<div align="center"> 
 
+  				<table width="190" height="260" border="0" cellpadding="0" cellspacing="0" style="border-left:1px solid #9CC6B8;border-top:1px solid #9CC6B8;border-right:1px solid #9CC6B8;border-bottom:1px solid #9CC6B8;">
 
+				  <tr> 
+				
+				  		<td > 
+							<table border="0" align="center" cellpadding="0" cellspacing="0">
+				  				<tr> 
+     				 				<td  height="71">
+										<a href="./show.php?por_id='.$array[$i]['id'].'" target=_blank><img src="admin/productimg/'.$array[$i]['pic'].'" width="129" height="149" border=0></a>
+									</td>
 
-               echo '
+     								<td width="6" valign="top" background="img/shadowl_12.jpg">
+										<img src="img/shadowl_02.jpg" width="6" height="6">
+									</td>
 
+       							</tr>
 
+  								<tr> 
 
-          <td><div align="center"> 
+   									<td height="6" background="img/shadowl_21.jpg"><img src="img/shadowl_20.jpg"></td>
+									<td width="6" height="6" align="left" valign="top"><img src="img/shadowl_22.jpg" width="6" height="6"></td>
 
+								</tr>
 
 
-  <table width="190" height="260" border="0" cellpadding="0" cellspacing="0" style="border-left:1px solid #9CC6B8;border-top:1px solid #9CC6B8;border-right:1px solid #9CC6B8;border-bottom:1px solid #9CC6B8;">
 
-
-
-  <tr> 
-
-
-
-  <td > <table border="0" align="center" cellpadding="0" cellspacing="0">
-
-
-
-  <tr> 
-
-
-
-      <td  height="71"><a href="./show.php?por_id='.$array[$i]['id'].'" target=_blank><img src="admin/productimg/'.$array[$i]['pic'].'" width="129" height="149" border=0></a></td>
-
-
-
-     <td width="6" valign="top" background="img/shadowl_12.jpg"><img src="img/shadowl_02.jpg" width="6" height="6"></td>
-
-
-
-
-
-
-
-       </tr>
-
-
-
-  <tr> 
-
-
-
-   <td height="6" background="img/shadowl_21.jpg"><img src="img/shadowl_20.jpg"></td>
-
-
-
-
-
-
-
-                        <td width="6" height="6" align="left" valign="top"><img src="img/shadowl_22.jpg" width="6" height="6"></td>
-
-
-
-   </tr>
-
-
-
-                    </table></td>
-
-
-
-
-
-
-
-                </tr>
-
-
-
-
-
-
-
-                <tr> 
-
-
-
-    <td height="20" class="cls12"> <div align="center"><a href="admin/productimg/'.$array[$i]['pic'].'" target="_blank">see larger image </a>
-
-
-
-            </div></td>
-
-
-
+                    		</table>
+						</td>
                 </tr>
 
 
 
                 <tr> 
+					<td height="20" class="cls12">
+					<div align="center">
+
+     					<a href="admin/productimg/'.$array[$i]['pic'].'" target="_blank">see larger image </a>
 
 
+					</div>
+            		</td>
+                </tr>
+
+
+
+                <tr> 
 
                   <td height="20" class="cls12"><div align="center">'.$array[$i]['p_name'].$isnew.'</div></td>
 
-
-
-
-
-
-
                 </tr>
+					 
+				 <tr>
 
+      				<td height="19" class="cls12"><div align="center">$'.getPrice($array[$i]['id']).'</div></td>
 
+				</tr>
 
-  <tr> 
+				<tr> 
+					<td height="16" bgcolor="#F0FAF6" align=center><a href="./show.php?por_id='.$array[$i]['id'].'" target=_blank>
+						<img src="img/product_addtocart.gif" width="94" height="33" border=0></a>
+					</td>
+				</tr>
 
+          </table>
 
+        </div></td>
 
-      <td height="19" class="cls12"><div align="center">$'.getPrice($array[$i]['id']).'</div></td>
-
-
-
-
-
-
-
-                </tr>
-
-
-
-                <tr> 
-
-
-
-   <td height="16" bgcolor="#F0FAF6" align=center><a href="./show.php?por_id='.$array[$i]['id'].'" target=_blank><img src="img/product_addtocart.gif" width="94" height="33" border=0></a></td>
-
-
-
-
-
-
-
-
-
-
-
-                </tr>
-
-
-
-
-
-
-
-              </table>
-
-
-
-
-
-
-
-            </div></td>
-
-
-
-
-
-
-
-
-
-
-
-        </tr>';}
+    </tr>';}
 
 
 
@@ -618,21 +516,7 @@ echo  '<td height="20" class="cls12">
 
 
 
-}else{
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	}else{
 
 //	echo "Sorry,no products~!";
 
@@ -654,9 +538,9 @@ for($i=0; $i<count($rows); $i++){
 
               echo '<tr> 
 
-                <td width="11">&nbsp;</td>
+                		<td width="11">&nbsp;</td>
 
-                <td width="120" class="cls12"><li><a href="/product.php?type_id='.$rows[$i]['id'].'">'.$rows[$i]['type_name'].'</a></td>              </tr>';
+               		 <td width="120" class="cls12"><li><a href="./product.php?type_id='.$rows[$i]['id'].'">'.$rows[$i]['type_name'].'</a></td>              </tr>';
 
 		$sql = "select * from pro_type where pid=".$rows[$i]['id'];;
 
@@ -680,7 +564,7 @@ for($i=0; $i<count($rows); $i++){
 
                         </div></td>
 
-                      <td width="84" class="cls12"><a href="/product.php?type_id='.$rows2[$n]['id'].'">'.$rows2[$n]['type_name'].'</a></td>                    </tr>
+                      <td width="84" class="cls12"><a href="./product.php?type_id='.$rows2[$n]['id'].'">'.$rows2[$n]['type_name'].'</a></td>                    </tr>
 
                   </table>
 
@@ -760,6 +644,11 @@ for($i=0; $i<count($rows); $i++){
 
 <?php
 
+
+/**
+ * 生成翻页查询语句SQL
+ *     修改每页图片数请修改$eachpage后的值
+ * */
 function genpage(&$sql,$page_size=1){
 
 
@@ -767,7 +656,7 @@ function genpage(&$sql,$page_size=1){
 
 	$page = $_GET["page"];
 
-  	$eachpage = $page_size*15;//一页显示6条时可以*6,也就是6的倍数 limit 0,6,limit 6,6 ,limit 12,6.......
+  	$eachpage = $page_size*18;		//eachpage:每页显示数，规则：一页显示6条时可以*6,也就是6的倍数 limit 0,6,limit 6,6 ,limit 12,6.......
 
     $pagesql = strstr($sql," from ");
 
@@ -789,7 +678,7 @@ function genpage(&$sql,$page_size=1){
 
 	$nextpage = ($page<$pages)?$page+1:$pages; 
 
-	$startpos = $page*$eachpage;
+	$startpos = $page*$eachpage;	//startpos = startposition
 
 	$sql .=" limit $startpos,$eachpage ";
 
@@ -801,7 +690,9 @@ function genpage(&$sql,$page_size=1){
 
 
 
-//显示分页
+/**
+ * 显示页脚的页数综合 上页，下页，最后页面控制
+ * */
 function showpage(){
 
     global $page,$pages,$prepage,$nextpage,$queryString; //param from genpage function
@@ -825,10 +716,11 @@ function showpage(){
 
     for($i=$startpage;$i<=$endpage;$i++){
 
-        if($i==$page)    echo " <b>[".($i+1)."]</b> ";
-
-        else        echo " <a href=$PHP_SELF?page=$i&$queryString class=cls12>".($i+1)."</a>";
-
+        if($i==$page) {   
+        	echo " <b>[".($i+1)."]</b> ";
+        }else{        
+        	echo " <a href=$PHP_SELF?page=$i&$queryString class=cls12>".($i+1)."</a>";
+        }
     }
 
 
@@ -837,7 +729,7 @@ function showpage(){
 
     if($page<$pages)
 
-        echo "<b><a href=$PHP_SELF?page=".($page+1)."&$queryString>&nbsp;&nbsp;Next</a>&nbsp;<a href=$PHP_SELF?page=$pages&$queryString>Last</a>";
+        echo "<b><a href=$PHP_SELF?page=".($page+1)."&$queryString>&nbsp;&nbsp;Next</a>&nbsp;<a href=$PHP_SELF?page=$pages&$queryString>  Last</a>";
 
 }
 
