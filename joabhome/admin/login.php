@@ -7,19 +7,28 @@ function getStat(){
 	$fp = fopen('config.ini','r');
 	$string = fread($fp,1000);
 	$adminarray = explode('|',$string);
-	fclose('config.ini');
+	fclose($fp);
 //	print_r($adminarray);exit;
 //	if($_REQUEST['username']!='admin'&&$_REQUEST['password']!='wwwjoabhomearts')	{
+	
+	//print error msg
+	if ( isset($_SESSION['loginMsg']) ) {
+		echo "<script language='javascript'>alert('".$_SESSION['loginMsg']."');</script>";
+		unset($_SESSION['loginMsg']);
+	}
+
 	if($_REQUEST['username']!=$adminarray[0]||$_REQUEST['password']!=$adminarray[1])	{
 
-		echo "管理员帐号或密码错误~!<a href='/admin/login.php'><<<重新登录</a>"; 
-		Header("Location: /admin/login.php");
-
+		//echo "管理员帐号或密码错误~!<a href='./login.php'><<<重新登录</a>"; 
+		$_SESSION['loginMsg'] = 'Login fail,Your password or username is mistake!';
+		echo "<script language='javascript'>window.location.href='./login.php';</script>";
+		//Header("Location: ./login.php");
+		
 	}else{
 
 		$_SESSION['usersefid'] = '通过';
-
-		Header("Location: /admin/main/main.php");
+		$_SESSION['userid'] = $_REQUEST['username'];
+		Header("Location: ./main/main.php");
 
 	}
 
@@ -47,19 +56,26 @@ echo <<< login_html
 <!--
 *{ font-size:14px; margin:0px; padding:0px;}
 body {
-	background-image: url(/admin/adminbodybg.gif);
+	background-image: url(./adminbodybg.gif);
 	background-color: #D2EFFA;
 	background-repeat:repeat-x;
 	text-align:center;
+	margin:auto;
 }
-div#login{
+#login{
 	width:521px;
 	height:340px;
-	margin-top:55px;
-	background-image: url(/admin/adminbg.gif);
+	margin-top:51px;
+  top: 0;   bottom: 0; 
+	background-image: url(./adminbg.gif);
 	background-repeat: no-repeat;
+	margin-left:auto;
+	margin-right:auto;
 }
-form{ margin:11em 0em 0em 4em; text-align:left;}
+#adminlogin tr,#adminlogin td,#adminlogin{
+	border:0;
+}
+
 form p{ margin:0.5em}
 #copy{font-size:12px;} 
 -->
@@ -70,9 +86,9 @@ form p{ margin:0.5em}
 
 <div id="login">
 
-<form name='form1'  onsubmit="return ckform()" method="post">
+<form name='form1'  onsubmit="return ckform()" method="post" style="padding-top:150px;">
 
-  <table width=68% height="19%"  border="1">
+  <table id="adminlogin" width=68% height="19%"  border="1" style="margin:auto;">
   
                 <tr>
                   <td align="center" colspan=2>用户登录</td>

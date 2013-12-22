@@ -1,12 +1,9 @@
 *{
-	font-family: arial,"sans-serif","Verdana";
+	font-family: OpenSansRegular, Arial, Helvetica, sans-serif;
 }
 p{margin:0;padding:0;}
 
 body{
-	-webkit-box-shadow: -1px 1px 5px rgba(0,0,0,0.75);
-	-moz-box-shadow: -1px 1px 5px rgba(0,0,0,0.75);
-	box-shadow: -1px 1px 5px rgba(0,0,0,0.75);
 	
 }
 
@@ -106,3 +103,11 @@ A:hover {
 	text-decoration: underline;
 }
 
+.clsTittleLv2{
+	font-family: OpenSansRegular, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: bold;
+	color: #042DFE;
+	text-decoration: none;height:40px;
+}

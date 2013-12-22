@@ -50,7 +50,7 @@
 
           <td><a href="stock.html"><img src="img/title_07.jpg" width="49" height="25" border="0"></a></td>
 
-          <td><img src="img/title_10.jpg" width="253" height="25" border="0" usemap="#Map" href="myshop.php"></td>
+          <td><img src="img/title_10.jpg" width="253" height="25" border="0" usemap="#Map" href="mycart.php"></td>
 
         </tr>
 

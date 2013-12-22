@@ -107,13 +107,13 @@ for($i=0; $i<count($rows); $i++){
 						//如果有属于这个类别的产品就展开，否则就直接链接到些类别产品
 						if($rows2){
 							if($b==9||$b==2){
-								echo    '<p ><a href="javascript:ot(\'t_'.$b.'\')" class="cls12"><font color=red>'.$rows0[$y]['type_name'].'</font> </a> </p>';
+								echo    '<p ><a href="javascript:ot(\'t_'.$b.'\')" class="cls12">'.$rows0[$y]['type_name'].'</a> </p>';
 							}else{
 						    	echo    '<p ><a href="javascript:ot(\'t_'.$b.'\')" class="cls12">'.$rows0[$y]['type_name'].' </a> </p>';
 							}
 						}else{
 							if($rows0[$y]['id']==3452){
-								echo '<p ><a href="javascript:go(\''.$rows0[$y]['id'].'\')" class="cls12"><font color=red>'.$rows0[$y]['type_name'].'</font></a></p>';
+								echo '<p ><a href="javascript:go(\''.$rows0[$y]['id'].'\')" class="cls12">'.$rows0[$y]['type_name'].'</a></p>';
 							}else{
 								echo '<p ><a href="javascript:go(\''.$rows0[$y]['id'].'\')" class="cls12">'.$rows0[$y]['type_name'].'</a></p>';
 							}

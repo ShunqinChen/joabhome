@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<link rel='stylesheet' type='text/css' href="/admin/other/css.css"></link>
-<script language="JAVASCRIPT" src="/admin/other/js.js"></script>
+<link rel='stylesheet' type='text/css' href="./other/css.css"></link>
+<script language="JAVASCRIPT" src="./other/js.js"></script>
 <title>无标题文档</title>
 </head>
 <body>
@@ -39,14 +39,14 @@ $_obj=&$rows;
 echo $_obj['ordernum_no'];
 ?>
 </td>
-    <td class="row2"><a href="/admin/index.php?mod=proInq&numbers=<?php
+    <td class="row2"><a href="./index.php?mod=proInq&numbers=<?php
 echo $_obj['proid'];
 ?>
 "><?php
 echo $_obj['proid'];
 ?>
 </a></td>
-    <td class="row2"><a href="/admin/index.php?mod=member&userid=<?php
+    <td class="row2"><a href="./index.php?mod=member&userid=<?php
 echo $_obj['userid'];
 ?>
 "><?php
@@ -57,7 +57,7 @@ echo $_obj['username'];
 echo $_obj['orderTime'];
 ?>
 </td>
-    <td class="row2"><a href="/admin/index.php?mod=proxx&ordernum=<?php
+    <td class="row2"><a href="./index.php?mod=proxx&ordernum=<?php
 echo $_obj['ordernum_no'];
 ?>
 " >[详细]</a>

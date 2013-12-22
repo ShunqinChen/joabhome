@@ -1,7 +1,13 @@
 eclipse.preferences.version=1
+encoding//admin/main/left.php=UTF-8
+encoding//admin/main/main.php=GBK
+encoding//admin/main/right.html=GBK
+encoding//admin/templates/proOrder.html=GBK
+encoding//admin/templates/proxx.html=GBK
 encoding//blog/admin=UTF-8
 encoding//blog/admin/editor=UTF-8
 encoding//blog/admin/editor/kindeditor.js=UTF-8
+encoding//printing/admin/main/left.html=GBK
 encoding/<project>=GBK
 encoding/blog=UTF-8
 encoding/helpcenter=UTF-8

@@ -27,7 +27,7 @@ function getResult($array){
 	global $db;
 	
 	for($i=0; $i<count($array); $i++){
-		$sql = "select username from member where id=".$array[$i]['userid'];
+		$sql = "select username from member where id='".$array[$i]['userid']."'";
 //		echo $sql;
 		$row = $db->GetOne($sql);
 		$array[$i]['username'] = $row;

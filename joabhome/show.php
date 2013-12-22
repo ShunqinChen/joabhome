@@ -259,17 +259,19 @@ if($rows[0]['is_new']=='T'){
 					
 						echo '<tr> 
 					
-					 			<td height="22" bgcolor=ffffff align="center">  <input type="checkbox" name="checkbox['.$i.']" value="'.$i.'"></td>
+					 			<td height="22" bgcolor=ffffff align="center">  <input type="checkbox" name="checkbox[]" value="'.$i.'"></td>
 					
-				    			<td height="22" class="cls12" bgcolor=ffffff align="center">'.$rows[$i]['pecif'].'</td>
+				    			<td height="22" class="cls12" bgcolor=ffffff align="center"><input name="pecif['.$i.']" type="text" value="'.$rows[$i]['pecif'].'"  readonly="true"  style="border:0px;text-align:center;" class="cls12"></td>
 					
-					    		<td class="cls12" bgcolor=ffffff align="center">$'.$rows[$i]['price'].'</td>
+					    		<td class="cls12" bgcolor=ffffff align="center"><input name="price['.$i.']" type="text" value="$'.$rows[$i]['price'].'" readonly="true" style="border:0px;text-align:center;" class="cls12"></td>
 					
-					    		<td class="cls12" bgcolor=ffffff align="center"> <input name="pecif['.$i.']" type="hidden" value="'.$rows[$i]['id'].'"><input name="quantity['.$i.']" type="text" size="8" value="" ></td>
+					    		<td class="cls12" bgcolor=ffffff align="center"><input name="pecifid['.$i.']" type="hidden" value="'.$rows[$i]['id'].'"><input name="quantity['.$i.']" type="number" size="8" value="" ></td>
 					
 					 		 </tr>';
 					}
 					
+					$_SESSION['cart_pro_id'] = $_REQUEST['por_id'];	//向myshop.php提交
+					$_SESSION['cart_flag']	=  "1";	//防止多次提交 myshop.php接收后置为0
 					?>
 
 </table>

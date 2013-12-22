@@ -7,8 +7,9 @@ class mysqldb {
 //	var $password = '5736811';
 	var $datebase = 'joabhome_jiankuncai';
 	function  __construct(){
-		$path = '/home/joabhome/public_html/admin/';	//上线请解开注释
+		//$path = '/home/joabhome/public_html/admin/';	//上线请解开注释
 		//$path = './admin/';
+		$path = dirname(dirname(__FILE__)).DIRECTORY_SEPARATOR;	//精确到绝对路径
 		$fp = fopen($path.'dataconfig.ini','r');	//读取文件流
 		$string = fread($fp,1000);
 		$adminarray = explode('|',$string);
@@ -157,6 +158,26 @@ class mysqldb {
 		return $num_rows;
 	}
 	
+	
+	/**Delete data from table**/
+	function Delete($sql,$param){
+		
+		$execSql = ",";
+		
+		if($param.is_array()){
+			foreach ( $param as $value ) {
+       			$execSql = $execSql + mysql_real_escape_string($value);
+			}
+			
+		}else if($param.is_string()){
+			$execSql = $param;
+		}
+		$execSql = $sql.$execSql;
+		
+		mysql_query(sprintf($execSql));
+		$num_rows = mysql_affected_rows();
+		return $num_rows;
+	}
 }
 
 $db = new mysqldb();
