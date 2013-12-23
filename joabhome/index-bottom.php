@@ -25,7 +25,7 @@
 		  </td>
           <td rowspan="2" valign="middle" class="cls12">
            	<div style="font-size:13px;height:100%;background-color:white;"> 
-            <p style="font-size:17px;padding:6px 0;color:#f60;">Product Brief:</p>
+            <p style="font-size:17px;padding:6px 0;color:#f60;text-align:left;"><b>Product Brief:</b></p>
             	<a href="http://www.artsb2c.com/">Oil painting</a>, 
             	framed oil painting, high quality oil painting, buy oil painting, 
             	oil painting for sale, modern 

@@ -75,8 +75,8 @@ try {
 	
 	unset($_SESSION['cart_flag']);//提交成功后清空提交标志
 	echo "<script language='javascript'>" .
-				"alert('Product list has been added to your shopping cart!');" .
-				//"window.location.href='mycart.php';" .
+				//"alert('Product list has been added to your shopping cart!');" .
+				"window.location.href='mycart.php';" .
 		  "</script>";
 	
 	//提交成功后跳转至购物车页面
